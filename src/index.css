@@ -1,22 +1,64 @@
-body{
+body {
   background-color: grey;
 }
-.home{
+.home {
   margin-top: 90px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.Shanks{
+.Shanks {
   height: 50vh;
-
 }
-.view{
-
+.view {
   justify-items: center;
   margin-left: 10px;
- 
 }
-.op{
+.op {
   height: 20vh;
+}
+.bor {
+  align-content: center;
+  border: 1px solid black;
+  border-radius: 30px 30px 30px 30px;
+}
+.my {
+  justify-items: center;
+  align-content: center;
+}
+.sam {
+  margin-top: 50px;
+  margin-left: 30%;
+  width: 20%;
+  height: 50%;
+  border-radius: 80px;
+  align-content: center;
+  align-items: center;
+}
+.my {
+  display: flex;
+  flex-direction: column;
+}
+.ram {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  margin-right: 20%; /* Space on the right */
+  transition: transform 0.5s ease-in, color 0.2s ease-in; /* Apply transition to both transform and color */
+}
+
+.ram:hover {
+  color: yellow; /* Change text color to yellow on hover */
+  transform: scale(2); /* Scale the element to 2x its size on hover */
+}
+
+.but {
+  margin-left: 40%;
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid yellow;
+}
+.but:hover {
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.3);
 }
