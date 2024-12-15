@@ -40,7 +40,7 @@ function App() {
           placeholder="Confirm Password"
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <button type="submit">Click Me</button>
+        <button type="submit">Submit</button>
       </form>
 
      
