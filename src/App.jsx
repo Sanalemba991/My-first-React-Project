@@ -1,14 +1,16 @@
 import React from "react";
-import Vid from "./video/Vid.mp4";
+
 
 function App() {
   return (
     <div>
       <h1>My First React Project for Video</h1>
-    <iframe
+    <iframe className="bor"
     height={350}
     width={907}
-    src={Vid}
+    frameBorder={0}
+
+    src="https://www.youtube.com/embed/pqZuSz8_2DM?list=RDCLAK5uy_ksEjgm3H_7zOJ_RHzRjN1wY-_FFcs7aAU&start=0"
     allowFullScreen/>
 
     </div>
