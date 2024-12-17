@@ -6,7 +6,9 @@ function App() {
     <h1>My First React Project for Video</h1>
     <div className="my">
      
-    <video src={Vid}></video>
+  <video controls>
+              
+              <source src={Vid}></source></video>
       <img
         className="sam"
         src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/03/is-shanks-evil-in-one-piece.jpg?q=50&fit=crop&w=1140&h=&dpr=1." alt="Shanks"
