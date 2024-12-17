@@ -16,7 +16,7 @@ function App() {
       />
       <img
         className="sam"
-        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/03/is-shanks-evil-in-one-piece.jpg?q=50&fit=crop&w=1140&h=&dpr=1." al
+        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/03/is-shanks-evil-in-one-piece.jpg?q=50&fit=crop&w=1140&h=&dpr=1." alt="Shanks"
       />
       <h1 className="ram">Shanks</h1>
       <div>
