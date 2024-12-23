@@ -12,6 +12,7 @@
     background-color: #4CAF50;
     color: white; 
     font-size: 16px;
+    margin-right: 90px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 20px;
@@ -27,4 +28,7 @@
 .sam:active {
     background-color: #3e8e41;
     transform: scale(0.98);
+}
+.op{
+    display: flex;
 }
