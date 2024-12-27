@@ -1,39 +1,22 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import Home from "./Home";
-import Sana from "./Sana";
-import Jamy from "./Jamy";
-import Prenita from "./components/Prenita";
-import REACT from "./REACT";
+import React, { useState } from 'react'
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-  
-  
-    {
-      path: "/sana",
-      element: <Sana />,
-    },
-    {
-      path:"/prenita",
-      element: <Prenita />,
-    },
-    {
-      path:'/react',
-      element:<REACT/>
-    }
-  ]);
+  const [ram,setRam]=useState("");
 
+  const handle=(event)=>{
+    setRam(event.target.value);
+  }
   return (
     <div>
-      <RouterProvider router={router} />
+      <input
+      type='text'
+      value={ram}
+      onChange={handle}
+      placeholder='Enter a man'/>
+      <p>Your Name is {ram}</p>
+    
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
