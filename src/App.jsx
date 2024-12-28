@@ -1,22 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from "react";
 
 function App() {
-  const [ram,setRam]=useState("");
+  const [result, setResult] = useState(0);
 
-  const handle=(event)=>{
-    setRam(event.target.value);
-  }
+  useEffect(() => {
+    const num1 = 5;
+    const num2 = 3;
+    const sum = num1 + num2;
+    setResult(sum);
+  }, [4]);
+
   return (
     <div>
-      <input
-      type='text'
-      value={ram}
-      onChange={handle}
-      placeholder='Enter a man'/>
-      <p>Your Name is {ram}</p>
-    
+      <h1>Result: {result}</h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
