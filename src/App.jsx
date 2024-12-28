@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
-function ButtonExample() {
-  const [message, setMessage] = useState('Hello, click the button!');
+function SimpleExample() {
+  const [message, setMessage] = useState('Hello, world!');
 
-  // useEffect that runs only once when the component first loads
   useEffect(() => {
-    setMessage('Component has loaded!'); // Change the message once
-  }, []);  // [] means "do this only once when the component mounts"
+    
+    const timer = setTimeout(() => {
+      setMessage('State updated after 2 seconds');
+    }, 2000);
 
-  // Function to handle button click
-  const handleClick = () => {
-    setMessage('You clicked the button!'); // Change the message when button is clicked
-  };
+    return () => clearTimeout(timer);
+  }, []); 
 
   return (
     <div>
-      <h1>{message}</h1> {/* Display the message */}
-      <button onClick={handleClick}>Click me!</button> {/* Button to change the message */}
+      <h1>{message}</h1>
     </div>
   );
 }
 
-export default ButtonExample;
+export default SimpleExample;
