@@ -9,7 +9,7 @@ function SimpleExample() {
       setMessage('State updated after 2 seconds');
     }, 2000);
 
-    return () => clearTimeout(timer);
+   
   }, []); 
 
   return (
