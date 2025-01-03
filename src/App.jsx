@@ -1,17 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from "react";
 
 function App() {
-  const[sana,setSana]=useState('sana')
-  useEffect(()=>{
-    const timer=setTimeout(()=>{
-      setSana('State is updates')
-    },2000)
-  },[])
+  const [sana, setSana] = useState("");
+  const [result, setResult] = useState("");
+
+
+  const change = (e) => {
+    setSana(e.target.value);
+  };
+
+  
+  const Fangba = () => {
+    setResult(sana); 
+  };
+
   return (
     <div>
-      <h>{sana}</h>
+   
+      <input
+        value={sana}
+        onChange={change}
+        placeholder="Type something"
+      />
+      <button onClick={Fangba}>Update Result</button>
+      <p>Result: {result}</p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
