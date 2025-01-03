@@ -5,16 +5,16 @@ function App() {
   const [result, setResult] = useState("");
 
   const change = (e) => {
-    setSana(e.target.value);
+    setSana(e.target.value); // Update sana state with the typed input
   };
 
   const Fangba = () => {
-    setResult(sana);
+    setResult(sana); // Update result state with the current value of sana
   };
 
   return (
     <div>
-      <input value={sana} onChange={change} placeholder="Type something" />
+      <input type="text" onChange={change} value={sana} />
       <button onClick={Fangba}>Update Result</button>
       <p>Result: {result}</p>
     </div>

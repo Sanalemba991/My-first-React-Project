@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div>
-        <div className="op">
+      <div className="op">
         <Link className="sam" to="/sana">
           Go to Sanalemba
         </Link>
@@ -16,7 +16,7 @@ function Navbar() {
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
