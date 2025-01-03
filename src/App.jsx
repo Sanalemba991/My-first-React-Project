@@ -5,11 +5,11 @@ function App() {
   const [result, setResult] = useState("");
 
   const change = (e) => {
-    setSana(e.target.value); // Update sana state with the typed input
+    setSana(e.target.value);
   };
 
   const Fangba = () => {
-    setResult(sana); // Update result state with the current value of sana
+    setResult(sana);
   };
 
   return (
