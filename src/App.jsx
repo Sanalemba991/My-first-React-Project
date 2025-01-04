@@ -3,11 +3,9 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [data, setData] = useState(0);
 
-useEffect(() => {
-  console.log("Component did mount", data);
- 
-
-})
+  useEffect(() => {
+    console.log("Component did mount", );
+  },[]);
 
   return (
     <div>
