@@ -3,9 +3,11 @@ import React, { useState, useEffect } from "react";
 function App() {
   const [data, setData] = useState(0);
 
-  useEffect(() => {
-    window.alert(`You clicked ${data} times`); // Show an alert whenever data changes
-  }, [data]); // Run the effect only when `data` changes
+useEffect(() => {
+  console.log("Component did mount", data);
+ 
+
+})
 
   return (
     <div>
