@@ -1,22 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function App() {
-  const [sana, setSana] = useState("");
-  const [result, setResult] = useState("");
+  const [data, setData] = useState(0);
 
-  const change = (e) => {
-    setSana(e.target.value);
-  };
-
-  const Fangba = () => {
-    setResult(sana);
-  };
+  useEffect(() => {
+    document.title = `You clicked ${data} times`;
+  }, []);
 
   return (
     <div>
-      <input type="text" onChange={change} value={sana} />
-      <button onClick={Fangba}>Update Result</button>
-      <p>Result: {result}</p>
+      <h1>Hello {data}</h1>
+      <button onClick={() => setData(data + 1)}>Click me</button>
     </div>
   );
 }
