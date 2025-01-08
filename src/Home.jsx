@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Navbar";
+
+import About from "./About";
 
 function Home() {
   return (
     <>
       <div>
-        <Navbar />
+     <About />
         <h1>Home Page for My Project</h1>
         <p>
           haka-based International Crimes Tribunal (ICT) has issued arrest
