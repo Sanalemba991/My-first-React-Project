@@ -1,18 +1,21 @@
-import React, { useState, useEffect } from "react";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+
 
 function App() {
-  const [data, setData] = useState(0);
 
-  useEffect(() => {
-    console.log("Component did mount");
-  }, []);
-
-  return (
+  return
+  (
     <div>
-      <h1>Hello {data}</h1>
-      <button onClick={() => setData(data + 1)}>Click me</button>
+      <BrowserRouter>
+<Routes>
+ <Route path="/" element={<Home />} />
+  <Route path="/about" element={<About />} />
+</Routes>
+
+
+      </BrowserRouter>
     </div>
+
   );
 }
-
 export default App;
